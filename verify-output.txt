@@ -1,0 +1,19 @@
+PASS  patients mapped 1:1 -> 20/20
+PASS  names preserved in API order -> Emily Williams | Ryan Johnson | Brandon Mitchell
+PASS  profile fields == API values
+PASS  diagnosis_history count == API
+PASS  diagnostic_list == API values
+PASS  lab_results == API values
+PASS  every BP record + vital sign == API values
+PASS  latest vitals = newest API record
+PASS  chart series == API values (oldest -> newest)
+PASS  missing value -> N/A
+PASS  missing vital sign -> N/A
+PASS  no chart point invented when BP is missing
+PASS  no latest record invented when history is missing
+PASS  empty API record -> nulls / empty lists
+PASS  components render N/A for an empty record
+PASS  sidebar list sorted A -> Z -> Ashley Martinez | Brandon Mitchell | David Johnson
+PASS  sort does not mutate the API order
+SAMPLE Jessica Taylor: latest March 2024 | HR 78 bpm | temp 98.6 degF | RR 20 bpm | newest BP Mar, 2024 160/78
+ALL CHECKS PASSED
